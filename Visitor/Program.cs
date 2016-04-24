@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Visitor
 {
@@ -23,7 +19,7 @@ namespace Visitor
                 netWorth += bankAccount.Amount; // each have different attributes, can't group it in a particular class
             }
 
-            foreach (var realEstate in person.RealEstates) // adding new operations for person (computing monthly income) will mean adding another set of loops
+            foreach (var realEstate in person.RealEstates) // adding new operations for person (computing monthly income) will mean adding another set of loop
             {
                 netWorth += realEstate.EstimatedValue;
             }
